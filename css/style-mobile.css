@@ -1,0 +1,66 @@
+/* Général */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 375px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+/* Header */
+.navigation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 30px 15px 15px 0;
+}
+
+.navigation a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 25%;
+    align-self: center;
+}
+
+#hebergements {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+}
+
+#activites {
+    margin-right: 80px;
+}
+
+#inscription {
+    margin-left: 10px;
+}
+
+
+@media screen and (min-width: 576px) {
+    
+}
+
+
+
