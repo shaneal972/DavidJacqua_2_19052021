@@ -93,6 +93,96 @@ nav ul {
 }
 
 
+/* Main - filtres */
+#filters {
+    display: flex;
+    width: 613px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 22px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filters h2 {
+    font-size: 0.8rem;
+    margin-right: 25px;
+}
+
+
+
+#eco {
+    width: 127px;
+    padding-right: 13px;
+}
+
+
+#fam {
+    width: 100px;
+    padding-right: 15px;
+}
+
+#rom {
+    width: 120px;
+    padding-right: 10px;
+}
+
+#anim {
+    width: 160px;
+    padding-right: 15px;
+}
+
+#filters button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 36px;
+    border: 1px solid#000;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#filters button .fas {
+    width: 36px;
+    height: 36px;
+    background-color: #deebff;
+    color: #0065fc;
+    line-height: 36px;
+    border-radius: 36px;
+}
+
+#infos {
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+#infos i {
+    font-size: 0.6rem;
+    color: #0065fc;
+    width: 16px;
+    border-radius: 16px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 3px;
+}
+
+#infos p {
+    font-size: 0.7rem;
+}
+
+
+/* Main - hebergements */
+#hebergements {
+    display: flex;
+}
+
+
+
+
 
 
 
