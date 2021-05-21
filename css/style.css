@@ -187,14 +187,10 @@ nav ul {
 
 
 /* Medias queries */
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     #container{
-        width: 100%;
+        width: auto;
     }
-
-    nav ul{
-        display: flex;
-        flex-wrap: wrap;
-    }
-  } */
+    
+}
 
