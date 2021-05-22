@@ -20,31 +20,33 @@
 <body>
     <div id="container">
         <header class="navigation">
-            <a href="/index.html">
-                <img src="./images/logo/Reservia.svg"
-                alt="Le logo du site">
-            </a>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="./images/logo/Reservia.svg"
+                    alt="Le logo du site">
+                </a>
+            </div>
             <a href="#" id="inscription"><strong>S'inscrire</strong></a>
-            <a href="#" id="hebergements">Hébergements</a>
-            <a href="#" id="activites">Activités</a>
+            <a href="#" id="nav-hebergements">Hébergements</a>
+            <a href="#" id="nav-activites">Activités</a>
         </header><!--Fin header-->
         <main>
             <section id="search">
-                <header>
+                <div class="header">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                </header><!--Fin header-->
+                </div><!--Fin .header-->
                 <form action="#" id="search-city">
-                    <i class="fas fa-map-marker-alt map-icon"></i>
+                    <span id="map-icon"><i class="fas fa-map-marker-alt"></i></span>
                     <input type="search" name="city" id="city" placeholder="Marseille, France">
-                    <span>Rechercher</span>
+                    <span><i class="fas fa-search"></i></span>
                 </form><!--Fin form-->
                 <div id="filters">
                     <h2>Filtres</h2>
-                    <button type="submit" id="eco"><i class="fas fa-money-bill-wave"></i>Economique</button>
-                    <button type="submit" id="fam"><i class="fas fa-child"></i>Familial</button>
-                    <button type="submit" id="rom"><i class="fas fa-heart"></i>Romantique</button>
-                    <button type="submit" id="anim"><i class="fas fa-dog"></i>Animaux autorisés</button>
+                    <a id="eco"><i class="fas fa-money-bill-wave"></i><span>Economique</span></a>
+                    <a id="fam"><i class="fas fa-child"></i><span>Familial</span></a>
+                    <a id="rom"><i class="fas fa-heart"></i><span>Romantique</span></a>
+                    <a id="anim"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
                 </div><!--Fin div#filters-->
                 <div id="infos">
                     <i class="fas fa-info"></i>

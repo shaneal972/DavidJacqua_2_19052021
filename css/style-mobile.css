@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 html {
@@ -21,45 +22,275 @@ a {
 #container {
     width: 375px;
     margin: 0 auto;
-    padding-left: 20px;
+    padding-top: 30px;
 }
 
 /* Header */
 .navigation {
-    width: 100%;
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    height: auto;
-    padding: 30px 15px 15px 0;
 }
 
-.navigation a {
-    display: inline-block;
-    margin-right: 50px;
-    width: 25%;
-    align-self: center;
+.logo {
+    margin-right: 77px;
 }
 
-#hebergements {
-    margin-left: 20px;
-    padding-top: 20px;
+#nav-hebergements,
+#nav-activites {
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
     padding-bottom: 20px;
-    border-bottom: solid 1px black;
+    border-bottom: 3px solid #f2f2f2;
+    color: black;
 }
 
-#activites {
-    margin-right: 80px;
+#nav-hebergements:hover,
+#nav-activites:hover {
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
 }
 
 #inscription {
-    margin-left: 10px;
+    margin-right: 35px;
+    color: #0065fc;
+}
+
+
+
+
+/* Main */
+main {
+    width: 100%;
+    padding-top: 35px;
+}
+
+/* section div.header */
+.header h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.135rem;
+    margin-bottom: 35px;
+}
+
+/* Form */ 
+
+#search-city {
+    display: flex;
+    width: 335px;
+    height: 50px;
+    margin-bottom: 35px;
+}
+
+#search-city #map-icon {
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+#search-city input {
+    width: 235px; 
+    border-top: 1px solid #f2f2f2;
+    border-right: none;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    padding-left: 15px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#search-city span {
+    display: block;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #0065fc;
+    border-radius: 10px
+}
+
+/* section#filters */
+#filters {
+    width: 335px;
+    margin-bottom: 30px;
+}
+
+#filters h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#eco,
+#rom,
+#fam,
+#anim {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+}
+
+#eco i,
+#rom i,
+#fam i,
+#anim i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #deebff;
+    color: #0065fc;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+}
+
+#eco {
+    width: 180px;
+    margin-right: 10px;
+}
+
+#fam {
+    width: 140px;
+}
+#rom {
+    width: 170px;
+    margin: 15px 0;
+}
+#anim {
+    width: 220px;
+}
+
+#filters span {
+    width: 71%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* div#infos */
+#infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#infos i {
+    width: 25px;
+    height: 25px;
+    color: #0065fc;
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#infos p {
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+
+
+
+/* section#hebergements */
+#hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* #heb-marseille {
+    /* width: 70%; 
+}*/
+
+/*#popularity {
+    /* width: 30%; 
+} */
+
+#heb-marseille img, #popularity img, #activites img {
+    width: 100%;
+    object-fit: fill;
 }
 
 
 @media screen and (min-width: 576px) {
+    #container {
+        width: 540px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40%;
+    }
     
+    #nav-hebergements, 
+    #nav-activites, 
+    #inscription {
+        width: 20%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #hebergements {
+        order: 1;
+    }
+    #inscription {
+        order: 3;
+    }
+    #activites {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        width: 720px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #container {
+        width: 960px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #container {
+        width: 1360px;
+        margin: auto;
+    }
 }
 
 
