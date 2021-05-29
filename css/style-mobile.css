@@ -384,6 +384,7 @@ footer h2 {
 @media screen and (max-width: 576px) {
     #container {
         width: 375px;
+        margin: 0 auto;
     }
 }
 
@@ -451,6 +452,34 @@ footer h2 {
     #container {
         width: 720px;
         margin: auto;
+    }
+
+    .navigation {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-hebergements, 
+    #nav-activites, 
+    #inscription {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #filters {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #infos {
+        width: auto;
     }
 }
 
