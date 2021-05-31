@@ -390,7 +390,7 @@ footer h2 {
 
 @media screen and (min-width: 576px) {
     #container {
-        width: 540px;
+        width: 640px;
     }
 
     .navigation {
@@ -401,7 +401,8 @@ footer h2 {
     }
 
     .logo {
-        width: 40%;
+        /* width: 40%; */
+        margin-right: 25%;
     }
     
     #nav-hebergements, 
@@ -424,6 +425,10 @@ footer h2 {
     }
 
     /* Main */
+    .header h1 {
+        font-size: 1.45rem;
+    }
+
     #search-city {
         width: 425px;
     }
@@ -450,15 +455,20 @@ footer h2 {
 
 @media screen and (min-width: 768px) {
     #container {
-        width: 720px;
-        margin: auto;
+        width: 740px;
+        margin: 0 auto;
     }
 
-    .navigation {
+    /* .navigation {
         display: flex;
-        /* flex-wrap: nowrap; */
+        /* flex-wrap: nowrap; 
         justify-content: space-between;
         align-items: center;
+    } */
+
+    .logo {
+        justify-content: flex-start;
+        margin-right: 35%;
     }
 
     #nav-hebergements, 
@@ -470,9 +480,13 @@ footer h2 {
         text-align: center;
     }
 
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
     #filters {
         display: flex;
-        width: auto;
+        width: 66%;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
@@ -486,7 +500,12 @@ footer h2 {
 @media screen and (min-width: 992px) {
     #container {
         width: 960px;
-        margin: auto;
+        margin: 0 auto;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        margin-right: 42%;
     }
 }
 
@@ -495,12 +514,22 @@ footer h2 {
         width: 1140px;
         margin: auto;
     }
+
+    .logo {
+        justify-content: flex-start;
+        margin-right: 52%;
+    }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
     #container {
-        width: 1360px;
+        width: 1380px;
         margin: auto;
+    }
+
+    .logo {
+        justify-content: flex-start;
+        margin-right: 60%;
     }
 }
 
