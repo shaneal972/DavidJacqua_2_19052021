@@ -380,14 +380,6 @@ footer h2 {
     padding-bottom: 0;
 }
 
-
-@media screen and (max-width: 576px) {
-    #container {
-        width: 375px;
-        margin: 0 auto;
-    }
-}
-
 @media screen and (min-width: 576px) {
     #container {
         width: 640px;
@@ -414,13 +406,13 @@ footer h2 {
         text-align: center;
     }
 
-    #hebergements {
+    #nav-hebergements {
         order: 1;
     }
     #inscription {
         order: 3;
     }
-    #activites {
+    #nav-activites {
         order: 2;
     }
 
@@ -451,6 +443,10 @@ footer h2 {
     .search-small {
         display: none;
     }
+
+    
+    
+
 }
 
 @media screen and (min-width: 768px) {
@@ -458,13 +454,6 @@ footer h2 {
         width: 740px;
         margin: 0 auto;
     }
-
-    /* .navigation {
-        display: flex;
-        /* flex-wrap: nowrap; 
-        justify-content: space-between;
-        align-items: center;
-    } */
 
     .logo {
         justify-content: flex-start;
@@ -481,7 +470,15 @@ footer h2 {
     }
 
     .header h1 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+    }
+
+    #search-city input::placeholder {
+        font-size: 1rem;
+    }
+
+    .search-large {
+        font-size: 1.1rem;
     }
 
     #filters {
@@ -495,6 +492,38 @@ footer h2 {
     #infos {
         width: auto;
     }
+
+    #hebergements {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #heb-marseille {
+        width: 300px;
+    }
+
+    #popularite {
+        width: 350px;
+    }
+
+    .popularite-elt {
+        width: 315px;
+    }
+
+    .m-hb {
+        margin: 20px 0;
+    }
+
+    .act-marseille {
+        display: flex;
+        width: 720px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -519,17 +548,58 @@ footer h2 {
         justify-content: flex-start;
         margin-right: 52%;
     }
+
+    .act-marseille {
+        display: flex;
+        width: auto;
+        height: 450px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .nos-activites {
+        width: 305px;
+        height: 450px;
+        align-items: stretch;
+    }
+
+    .na-stretch img {
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .nac-no-stretch {
+        height: 190px;
+    }
+
+    .nac-mb {
+        margin-bottom: 70px;
+    }
+
+
+/*
+    .na-stretch {
+        align-items: stretch;
+    } */
 }
 
 @media screen and (min-width: 1440px) {
     #container {
-        width: 1380px;
+        width: 1360px;
         margin: auto;
     }
 
     .logo {
         justify-content: flex-start;
         margin-right: 60%;
+    }
+
+    #filters {
+        display: flex;
+        width: 66%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
