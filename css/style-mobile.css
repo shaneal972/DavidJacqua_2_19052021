@@ -502,6 +502,12 @@ footer h2 {
         width: 300px;
     }
 
+    #heb-marseille article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     #popularite {
         width: 350px;
     }
@@ -521,6 +527,11 @@ footer h2 {
         justify-content: space-between;
     }
 
+    .na-stretch img {
+        object-fit: cover;
+        height: 350px;
+    }
+
     
 
 
@@ -536,6 +547,28 @@ footer h2 {
         justify-content: flex-start;
         margin-right: 42%;
     }
+
+    #heb-marseille {
+        width: 550px;
+    }
+
+    .nos-offres {
+        width: 255px;
+        height: 200px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 2px #f2f2f2;
+    }
+    
+    .nos-offres img {
+        width: 245px;
+        height: 115px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        object-position: left;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -549,23 +582,40 @@ footer h2 {
         margin-right: 52%;
     }
 
+    #heb-marseille {
+        width: 700px;
+        padding: 0 30px;
+    }
+
+    #heb-marseille h1 {
+        font-size: 1.6rem;
+    }
+
+    #popularite {
+        width: 350px;
+    }
+
+    .popularite-elt {
+        width: 315px;
+    }
+
     .act-marseille {
         display: flex;
         width: auto;
         height: 450px;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .nos-activites {
-        width: 305px;
+        width: 275px;
         height: 450px;
         align-items: stretch;
     }
 
     .na-stretch img {
         object-fit: cover;
-        height: 400px;
+        height: 396px;
     }
 
     .nac-no-stretch {
@@ -600,6 +650,23 @@ footer h2 {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    #heb-marseille {
+        width: 900px;
+        padding: 0 30px;
+    }
+
+    #heb-marseille h1 {
+        font-size: 1.6rem;
+    }
+
+    #popularite {
+        width: 400px;
+    }
+
+    .popularite-elt {
+        width: 365px;
     }
 }
 
