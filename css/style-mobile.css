@@ -295,7 +295,7 @@ main {
     width: 335px;
     height: 200px;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 1px 1px 2px 2px #f2f2f2;
 }
@@ -317,10 +317,16 @@ main {
     padding-left: 15px;
 }
 
-.nos-offres h2 + p {
-    font-size: 1rem;
-    margin-bottom: 3px;
+.nos-offres figcaption {
+    margin-bottom: 7px; 
+    font-weight: 700;
 }
+
+.star-mhb {
+    margin-top: 3px;
+}
+
+
 
 #heb-marseille article + p {
     font-size: 1.2rem;
@@ -475,6 +481,7 @@ footer h2 {
 
     #search-city input::placeholder {
         font-size: 1rem;
+        color: black;
     }
 
     .search-large {
@@ -532,8 +539,40 @@ footer h2 {
         height: 350px;
     }
 
-    
+    /* Footer */
+    footer {
+        width: 70%;
+        height: 485px;
+        margin-top: 45px;
+        padding-top: 50px;
+        padding-left: 30px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-around;
+    }
 
+    footer h2 {
+        font-size: 0.6rem;
+        margin-bottom: 25px;
+    }
+
+    footer a {
+        font-size: 0.5rem;
+    }
+
+    .f-apropos, .f-hebergements {
+        margin-bottom: 30px;
+    }
+
+    .f-apropos ul li, .f-hebergements ul li, .f-assistance ul li {
+        padding-bottom: 20px;
+    }
+
+    .f-apropos ul li:nth-last-child(-n+1),
+    .f-hebergements ul li:nth-last-child(-n+1),
+    .f-assistance ul li:nth-last-child(-n+1) {
+        padding-bottom: 0;
+    }
 
 }
 
@@ -556,7 +595,7 @@ footer h2 {
         width: 255px;
         height: 200px;
         padding: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 1px 1px 2px 2px #f2f2f2;
     }
@@ -625,12 +664,6 @@ footer h2 {
     .nac-mb {
         margin-bottom: 70px;
     }
-
-
-/*
-    .na-stretch {
-        align-items: stretch;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
@@ -668,6 +701,8 @@ footer h2 {
     .popularite-elt {
         width: 365px;
     }
+
+    
 }
 
 
