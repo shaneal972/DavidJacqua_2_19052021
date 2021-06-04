@@ -350,12 +350,14 @@ main {
 .nos-activites img {
     width: 100%;
     height: 135px;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .nos-activites h2 {
     margin: 10px 0 20px 15px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 24px;
 }
 
 /* Footer */
@@ -541,39 +543,41 @@ footer h2 {
 
     /* Footer */
     footer {
-        width: 70%;
-        height: 485px;
+        width: 100%;
+        height: 170px;
         margin-top: 45px;
         padding-top: 50px;
         padding-left: 30px;
         background-color: #f2f2f2;
         display: flex;
-        justify-content: space-around;
+    }
+
+    .fm-hb {
+        margin: 4px 0;
     }
 
     footer h2 {
-        font-size: 0.6rem;
-        margin-bottom: 25px;
+        font-size: 0.8rem;
+        margin-bottom: 8px;
     }
 
     footer a {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
+        color: black;
     }
 
     .f-apropos, .f-hebergements {
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
     .f-apropos ul li, .f-hebergements ul li, .f-assistance ul li {
-        padding-bottom: 20px;
-    }
-
-    .f-apropos ul li:nth-last-child(-n+1),
-    .f-hebergements ul li:nth-last-child(-n+1),
-    .f-assistance ul li:nth-last-child(-n+1) {
         padding-bottom: 0;
     }
 
+    footer section ul {
+        width: 55%;
+        margin-right: 200px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -658,11 +662,21 @@ footer h2 {
     }
 
     .nac-no-stretch {
-        height: 190px;
+        width: 260px;
+        height: 180px;
+    }
+
+    .nac-no-stretch img {
+        object-fit: cover;
     }
 
     .nac-mb {
-        margin-bottom: 70px;
+        margin-bottom: 32px;
+    }
+
+    footer section ul {
+        width: 55%;
+        margin-right: 330px;
     }
 }
 
@@ -701,6 +715,58 @@ footer h2 {
     .popularite-elt {
         width: 365px;
     }
+
+    .nac-no-stretch-fdp {
+        width: 310px;
+        height: 235px;
+    }
+
+    .fdp-mb {
+        margin-bottom: 32px;
+    }
+
+    .nac-no-stretch-idf {
+        width: 310px;
+        height: 182px;
+    }
+
+    .nos-activites-idf img {
+        height: 130px;
+        object-position: 100% 1%;
+    }
+
+    .nos-activites-fdp img {
+        height: 180px;
+        object-position: 100% 40%;
+    }
+
+    .nac-no-stretch-nddlg {
+        width: 305px;
+        height: 195px;
+    }
+
+    .nddlg-mb {
+        margin-bottom: 45px;
+    }
+
+    .nac-no-stretch-pl {
+        width: 305px;
+        height: 210px;
+    }
+
+    .nos-activites-nddlg img {
+        height: 140px;
+        object-position: 100% 1%;
+    }
+
+    .nos-activites-pl img {
+        height: 155px;
+        object-position: 100% 10%;
+    }
+
+  
+
+   
 
     
 }
