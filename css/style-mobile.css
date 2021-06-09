@@ -22,7 +22,6 @@ a {
 #container {
     width: 375px;
     margin: 0 auto;
-    /* padding-top: 30px; */
 }
 
 /* Header */
@@ -43,7 +42,6 @@ header {
 
 .logo {
     margin-right: 77px;
-    /* padding-left: 20px; */
 }
 
 #nav-hebergements,
@@ -73,12 +71,7 @@ header {
 /* Main */
 main {
     width: 100%;
-    /* padding-top : 35px; */
 }
-
-/* #search {
-    padding-left: 20px;
-} */
 
 /* section div.header */
 .header h1{
@@ -533,11 +526,7 @@ footer h2 {
     }
 
     #filters {
-        display: flex;
-        width: 66%;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        width: 70%;
     }
 
     #infos {
@@ -552,7 +541,6 @@ footer h2 {
 
     #heb-marseille {
         width: 100%;
-        /* background-color: #f2f2f2; */
     }
 
     #heb-marseille article {
@@ -653,10 +641,6 @@ footer h2 {
         margin-right: 42%;
     }
 
-    /* #heb-marseille {
-        width: 550px;
-    } */
-
     #popularite {
         display: block;
         width: 100%;
@@ -672,7 +656,6 @@ footer h2 {
 
 
     #popularite article {
-        /* width: 940px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -927,12 +910,6 @@ footer h2 {
         height: 155px;
         object-position: 100% 10%;
     }
-
-  
-
-   
-
-    
 }
 
 
