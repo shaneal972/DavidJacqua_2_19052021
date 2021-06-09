@@ -104,14 +104,14 @@ main {
     background-color: #f2f2f2;
     color: black;
     text-align: center;
-    border-radius: 9px 0 0 9px;
+    border-radius: 15px 0 0 15px;
 }
 
 #search-city input {
     width: 235px; 
-    border-top: 2px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
     border-right: none;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
     border-left: none;
     padding-left: 15px;
     color: black;
@@ -361,7 +361,7 @@ main {
     height: 190px;
     margin-bottom: 25px;
     border-radius: 15px;
-    box-shadow: 1px 1px 2px 2px #f2f2f2;
+    box-shadow: 1px 1px 2px 4px #f2f2f2;
 }
 
 .nos-activites img {
@@ -384,6 +384,10 @@ footer {
     padding-top: 50px;
     padding-left: 30px;
     background-color: #f2f2f2;
+}
+
+footer a {
+    color: black;
 }
 
 footer h2 {
@@ -474,7 +478,7 @@ footer h2 {
         color: white;
         font-size: 1.3rem;
         background-color: #0065fc;
-        border-radius: 10px
+        border-radius: 15px
     }
 
     .search-small {
@@ -580,11 +584,12 @@ footer h2 {
         width: 100%;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     .na-stretch img {
         object-fit: cover;
-        height: 350px;
+        /* height: 350px; */
     }
 
     #activites h1 {
@@ -698,6 +703,35 @@ footer h2 {
         object-fit: cover;
         object-position: left;
     }
+
+    .act-marseille {
+        display: flex;
+        width: auto;
+        height: 450px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .nos-activites {
+        width: 250px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 4px #f2f2f2;
+        align-items: stretch;
+    }
+
+    .na-stretch {
+        height: 405px;
+    }
+
+    .na-stretch img {
+        object-fit: cover;
+        height: 350px;
+    }
+    
+    
 
 }
 
@@ -834,10 +868,14 @@ footer h2 {
 
     #filters {
         display: flex;
-        width: 66%;
+        width: 65%;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         flex-wrap: wrap;
+    }
+
+    #eco {
+        margin-right: 0;
     }
 
     #heb-marseille {
