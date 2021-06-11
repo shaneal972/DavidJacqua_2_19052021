@@ -35,16 +35,16 @@ header {
 .navigation {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .logo {
-    margin-right: 77px;
+    margin-right: 135px;
 }
 
-#nav-hebergements:active {
+header nav #nav-hebergements.active {
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
 }
@@ -66,7 +66,6 @@ header {
 }
 
 #inscription {
-    margin-right: 35px;
     color: #0065fc;
 }
 
@@ -76,6 +75,7 @@ header {
 /* Main */
 main {
     width: 100%;
+    padding-top: 35px;
 }
 
 /* section div.header */
@@ -85,8 +85,14 @@ main {
 }
 
 .header p {
-    font-size: 1.135rem;
+    font-size: 1.1rem;
     margin-bottom: 35px;
+}
+
+#search,
+#heb-marseille,
+#activites {
+    padding-left: 15px;
 }
 
 /* Form */ 
@@ -214,21 +220,22 @@ main {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 40px;
+    align-items: baseline;
 }
 
 #infos i {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 31px;
     color: #0065fc;
-    border: 1px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 25px;
     text-align: center;
-    line-height: 25px;
+    line-height: 31px;
 }
 
 #infos p {
     margin-left: 15px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 
@@ -251,17 +258,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
     justify-content: space-evenly;
 }
 
 .popularite-header {
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 0 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .popularite-elt {
@@ -276,10 +281,11 @@ main {
 }
 
 .popularite-elt img {
-    width: 130px;
+    width: 127px;
     height: 135px;
     border-radius: 15px 0 0 15px;
     margin-right: 20px;
+    object-fit: cover;
 }
 
 .m-hb {
@@ -293,11 +299,20 @@ main {
 }
 
 .popularite-infos h2 {
+    font-size: 1.1rem;
+}
+
+.popularite-infos-vote i {
     font-size: 1rem;
 }
 
+
 .pi-mhb {
     margin: 10px 0 25px 0;
+}
+
+.heb-prix {
+    font-size: 0.85rem;
 }
 
 .fa-star {
@@ -309,8 +324,8 @@ main {
 }
 
 #heb-marseille h1 {
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .nos-offres {
@@ -342,10 +357,12 @@ main {
 .nos-offres figcaption {
     margin-bottom: 7px; 
     font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .star-mhb {
-    margin-top: 3px;
+    margin-top: 12px;
+    font-size: 0.8rem;
 }
 
 
@@ -373,6 +390,15 @@ main {
     width: 100%;
     height: 135px;
     object-fit: cover;
+    object-position: 100% 18%;
+    border-radius: 15px 15px 0 0;
+}
+
+.nos-activites-fdp img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    object-position: 100% 42%;
     border-radius: 15px 15px 0 0;
 }
 
@@ -404,14 +430,21 @@ footer h2 {
     margin-bottom: 30px;
 }
 
-.f-apropos ul li, .f-hebergements ul li, .f-assistance ul li {
-    padding-bottom: 20px;
+.f-apropos ul li, 
+.f-hebergements ul li, 
+.f-assistance ul li {
+    padding-bottom: 10px;
 }
 
 .f-apropos ul li:nth-last-child(-n+1),
 .f-hebergements ul li:nth-last-child(-n+1),
 .f-assistance ul li:nth-last-child(-n+1) {
     padding-bottom: 0;
+}
+
+.f-assistance h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 576px) {
@@ -555,6 +588,7 @@ footer h2 {
 
     #heb-marseille {
         width: 100%;
+        background: #f2f2f2;
     }
 
     #heb-marseille article {
@@ -682,11 +716,11 @@ footer h2 {
         margin-right: 42%;
     }
 
-    #popularite {
+    /* #popularite {
         display: block;
         width: 100%;
         height: 250px;
-    }
+    } */
 
     .popularite-header {
         justify-content: space-evenly;
@@ -703,16 +737,16 @@ footer h2 {
         align-items: center;
     }
 
-    .popularite-elt {
+    /* .popularite-elt {
         width: 300px;
-    }
+    } */
 
-    .popularite-elt img {
+   /*  .popularite-elt img {
         width: 123px;
-    }
+    } */
 
     .popularite-infos {
-        width: 156px;
+        width: 50%;
         padding-top: 15px;
         padding-bottom: 10px;
     }
