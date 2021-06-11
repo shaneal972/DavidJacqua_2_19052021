@@ -44,6 +44,11 @@ header {
     margin-right: 77px;
 }
 
+#nav-hebergements:active {
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+}
+
 #nav-hebergements,
 #nav-activites {
     width: 50%;
@@ -518,7 +523,12 @@ footer h2 {
     header nav #nav-hebergements:hover,
     nav #nav-activites:hover {
         border-bottom: none;
-        border-top: 2px solid #0065fc;
+        border-top: 3px solid #0065fc;
+    }
+
+    header nav #nav-hebergements:active {
+        border-bottom: none;
+        border-top: 3px solid #0065fc;
     }
 
     .header h1 {
@@ -556,12 +566,13 @@ footer h2 {
     #popularite {
         display: block;
         width: 100%;
-        height: 440px;
+        height: 760px;
     }
 
     .popularite-header {
         justify-content: space-between;
-        padding-left: 38px;
+        padding-left: 100px;
+        margin-bottom: 20px;
     }
 
     #popularite article {
@@ -572,7 +583,19 @@ footer h2 {
     }
 
     .popularite-elt {
-        width: 315px;
+        width: 550px;
+        height: 200px;
+    }
+
+    .popularite-elt img {
+        width: 50%;
+        object-fit: cover;
+        object-position: 100% 67%;
+        height: auto;
+    }
+
+    .popularite-infos {
+        width: 33%;
     }
 
     .m-hb {
@@ -590,6 +613,19 @@ footer h2 {
     .na-stretch img {
         object-fit: cover;
         /* height: 350px; */
+    }
+
+    .nos-activites-vp, 
+    .nos-activites-pndc {
+        height: 405px;
+    }
+
+
+    .nos-activites-vp img, 
+    .nos-activites-pndc img {
+        height: 350px;
+        object-fit: cover;
+        object-position: 25% 100%;
     }
 
     #activites h1 {
