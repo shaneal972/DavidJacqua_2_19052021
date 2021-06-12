@@ -589,6 +589,7 @@ footer h2 {
     #heb-marseille {
         width: 100%;
         background: #f2f2f2;
+        padding: 0 10px;
     }
 
     #heb-marseille article {
@@ -600,7 +601,8 @@ footer h2 {
     #popularite {
         display: block;
         width: 100%;
-        height: 760px;
+        height: 750px;
+        margin-bottom: 10px;
     }
 
     .popularite-header {
@@ -838,6 +840,7 @@ footer h2 {
         height: auto;
         justify-content: flex-start;
         align-items: stretch;
+        border-radius: 15px;
     }
 
     .popularite-elt {
@@ -846,6 +849,10 @@ footer h2 {
 
     .popularite-header {
         padding: 38px 0;
+    }
+
+    .heb-prix {
+        font-size: 0.8rem;
     }
 
     .act-marseille {
@@ -951,24 +958,57 @@ footer h2 {
     #heb-marseille {
         width: 900px;
         padding: 0 30px;
-        
+        height: 630px;
     }
 
     #heb-marseille h1 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     #popularite {
-        width: 425px;
-        height: 663px;
+        width: 420px;
+        height: 630px;
+    }
+
+    .popularite-header {
+        padding-top: 33px;
+        padding-bottom: 0;
     }
 
     .popularite-elt {
-        width: 365px;
+        width: 345px;
+        height: 145px;
+    }
+
+    .m-hb {
+        margin: 30px 0;
+    }
+
+    .popularite-elt img {
+        width: 130px;
+        object-fit: cover;
+        object-position: center;
+        height: auto;
+    }
+
+    .popularite-infos h2 {
+        font-size: 1rem;
     }
 
     .na-couples {
         width: 310px;
+    }
+
+    .na-stretch {
+        width: 305px;
+    }
+
+    .nos-activites-vp img {
+        object-position: 56%;
+    }
+
+    .nos-activites-pndc img {
+        object-position: 48%;
     }
 
     .nac-no-stretch-fdp {
