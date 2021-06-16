@@ -79,7 +79,7 @@ main {
 }
 
 /* section div.header */
-.header h1{
+.header h2{
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
@@ -152,7 +152,7 @@ main {
     margin-bottom: 30px;
 }
 
-#filters h2 {
+#filters h3 {
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -323,7 +323,7 @@ main {
     color: #f2f2f2;
 }
 
-#heb-marseille h1 {
+#heb-marseille h2 {
     padding-top: 30px;
     padding-bottom: 20px;
 }
@@ -343,11 +343,6 @@ main {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     object-position: left;
-}
-
-.nos-offres h2 {
-    font-size: 1rem;
-    margin: 5px 0;
 }
 
 .no-ml {
@@ -374,7 +369,7 @@ main {
 }
 
 
-#activites h1{
+#activites h2{
     margin-bottom: 30px;
 }
 
@@ -402,7 +397,7 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
-.nos-activites h2 {
+.nos-activites h3 {
     margin: 10px 0 20px 15px;
     font-size: 0.8rem;
     line-height: 24px;
@@ -442,11 +437,6 @@ footer h2 {
     padding-bottom: 0;
 }
 
-.f-assistance h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
 @media screen and (min-width: 576px) {
     #container {
         width: 640px;
@@ -483,6 +473,11 @@ footer h2 {
     nav #nav-activites:hover {
         border-bottom: none;
         border-top: 2px solid #0065fc;
+    }
+
+    header nav #nav-hebergements.active {
+        border-bottom: none;
+        border-top: 3px solid #0065fc;
     }
 
     #nav-hebergements {
@@ -555,11 +550,6 @@ footer h2 {
 
     header nav #nav-hebergements:hover,
     nav #nav-activites:hover {
-        border-bottom: none;
-        border-top: 3px solid #0065fc;
-    }
-
-    header nav #nav-hebergements:active {
         border-bottom: none;
         border-top: 3px solid #0065fc;
     }
@@ -718,11 +708,13 @@ footer h2 {
         margin-right: 42%;
     }
 
-    /* #popularite {
+    #popularite {
         display: block;
-        width: 100%;
-        height: 250px;
-    } */
+        width: 70%;
+        height: 740px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 
     .popularite-header {
         justify-content: space-evenly;
@@ -759,7 +751,7 @@ footer h2 {
     
 
     .nos-offres {
-        width: 255px;
+        width: 300px;
         height: 200px;
         background-color: #fff;
         padding: 5px;
@@ -769,11 +761,15 @@ footer h2 {
     }
     
     .nos-offres img {
-        width: 245px;
+        width: 100%;
         height: 115px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
         object-position: left;
+    }
+
+    #activites {
+        width: auto;
     }
 
     .act-marseille {
@@ -786,7 +782,7 @@ footer h2 {
     }
 
     .nos-activites {
-        width: 250px;
+        width: 200px;
         margin-bottom: 25px;
         margin-right: 15px;
         border-radius: 15px;
@@ -796,6 +792,7 @@ footer h2 {
 
     .na-stretch {
         height: 405px;
+        width: 230px;
     }
 
     .na-stretch img {
@@ -824,7 +821,7 @@ footer h2 {
     }
 
     #heb-marseille {
-        width: 700px;
+        width: 68%;
         padding: 0 30px;
         background-color: #f2f2f2;
         border-radius: 15px;
@@ -834,13 +831,40 @@ footer h2 {
         font-size: 1.6rem;
     }
 
+    .nos-offres {
+        width: 345px;
+        height: 200px;
+        background-color: #fff;
+        padding: 5px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 2px rgb(53 52 52 / 15%);
+    }
+
+    .nos-offres img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 63%;
+    }
+
     #popularite {
         display: flex;
         width: 350px;
-        height: auto;
+        height: 870px;
         justify-content: flex-start;
         align-items: stretch;
         border-radius: 15px;
+    }
+
+    #popularite article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .m-hb {
+        margin: 45px 0;
     }
 
     .popularite-elt {
@@ -848,7 +872,11 @@ footer h2 {
     }
 
     .popularite-header {
-        padding: 38px 0;
+        justify-content: space-around;
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        width: auto;
     }
 
     .heb-prix {
@@ -866,11 +894,20 @@ footer h2 {
     .na-couples {
         width: 270px;
     }
+    
+    .nac-no-stretch-fdp {
+        width: 265px;
+        height: 235px;
+    }
 
     .nos-activites {
-        width: 275px;
-        height: 450px;
+        width: 265px;
+        /* height: 450px; */
         align-items: stretch;
+    }
+
+    .na-stretch {
+        height: 450px;
     }
 
     .na-stretch img {
@@ -878,10 +915,6 @@ footer h2 {
         height: 396px;
     }
 
-    .nac-no-stretch-fdp {
-        width: 265px;
-        height: 235px;
-    }
 
     .fdp-mb {
         margin-bottom: 51px;
@@ -956,13 +989,29 @@ footer h2 {
     }
 
     #heb-marseille {
-        width: 900px;
+        width: 875px;
         padding: 0 30px;
         height: 630px;
     }
 
     #heb-marseille h1 {
         font-size: 1.3rem;
+    }
+
+    .nos-offres {
+        width: 250px;
+        height: 200px;
+        background-color: #fff;
+        padding: 5px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 2px rgb(53 52 52 / 15%);
+    }
+
+    .nos-offres img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 52%;
     }
 
     #popularite {
