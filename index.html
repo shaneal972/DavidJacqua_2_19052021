@@ -21,14 +21,20 @@
         <header>
             <nav class="navigation">
                 <div class="logo">
-                    <a href="/index.html" title="">
+                    <a href="/index.html" title="lien vers la page d'accueil">
                         <img src="./images/logo/Reservia.svg"
                         alt="Le logo du site">
                     </a>
                 </div>
-                <a href="#" id="inscription"><strong>S'inscrire</strong></a>
-                <a href="#hebergements" id="nav-hebergements" class="active">Hébergements</a>
-                <a href="#activites" id="nav-activites">Activités</a>
+                <a href="#" id="inscription" title="lien vers la page d'inscription">
+                    <strong>S'inscrire</strong>
+                </a>
+                <a href="#hebergements" id="nav-hebergements" class="active" title="ancre vers la section hébergements">
+                    Hébergements
+                </a>
+                <a href="#activites" id="nav-activites" title="ancre vers la section activités">
+                    Activités
+                </a>
             </nav>
         </header><!--Fin header-->
         <main>
@@ -45,10 +51,10 @@
                 </form><!--Fin form-->
                 <div id="filters">
                     <h3>Filtres</h3>
-                    <a id="eco"><i class="fas fa-money-bill-wave"></i><span>Economique</span></a>
-                    <a id="fam"><i class="fas fa-child"></i><span>Familial</span></a>
-                    <a id="rom"><i class="fas fa-heart"></i><span>Romantique</span></a>
-                    <a id="anim"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
+                    <a id="eco" title="lance la recherche en filtrant si économique"><i class="fas fa-money-bill-wave"></i><span>Economique</span></a>
+                    <a id="fam" title="lance la recherche en filtrant si familial"><i class="fas fa-child"></i><span>Familial</span></a>
+                    <a id="rom" title="lance la recherche en filtrant si romantique"><i class="fas fa-heart"></i><span>Romantique</span></a>
+                    <a id="anim" title="lance la recherche en filtrant si animaux ou pas"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
                 </div><!--Fin div#filters-->
                 <div id="infos">
                     <i class="fas fa-info"></i>
@@ -59,7 +65,7 @@
                 <section id="heb-marseille">
                     <h2>Hébergements à Marseille</h2>
                     <article>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre auberge de la cannebière">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/auberge-cannebiere.jpg" alt="Chambre à l'auberge de la cannebière">
@@ -75,7 +81,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre hotel du port">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/hotel-du-port.jpg" alt="Chambre à l'hôtel du port">
@@ -91,7 +97,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre hotel les mouettes">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/hotel-les-mouettes.jpg" alt="Chambre à l'hôtel des mouettes">
@@ -107,7 +113,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre hôtel de la mer">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/hotel-de-la-mer.jpg" alt="Chambre à l'hôtel de la mer">
@@ -123,7 +129,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre l'auberge sur le panier">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/auberge-le-panier.jpg" alt="Chambre à l'auberge le panier">
@@ -139,7 +145,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentaiton de l'offre hôtel chez amina">
                             <div class="nos-offres">
                                 <figure>
                                     <img src="./images/hebergements/4_small/hotel-chez-amina.jpg" alt="Chambre à l'hôtel chez amina">
@@ -164,7 +170,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <article>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'offre populaire hôtel soleil matin">
                             <div class="popularite-elt">
                                 <img src="./images/hebergements/3_medium/hotel-soleil-matin.jpg" alt="Chambre d'hotel">
                                 <div class="popularite-infos">
@@ -180,7 +186,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'offre populaire chambres hôtes coeur de l'eau">
                             <div class="popularite-elt m-hb">
                                 <img src="./images/hebergements/3_medium/chambre-hotes-coeur-de-leau.jpg" alt="Chambre style usine">
                                 <div class="popularite-infos">
@@ -196,7 +202,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'offre populaire hôtel bleu blanc">
                             <div class="popularite-elt">
                                 <img src="./images/hebergements/2_large/hotel-bleu-blanc.jpg" alt="Chambre style boisé">
                                 <div class="popularite-infos">
@@ -218,40 +224,40 @@
             <section id="activites">
                 <h2>Activités à Marseille</h2>
                 <div class="act-marseille">
-                    <a href="#">
+                    <a href="#" title="ouvre la page de présentation de l'activité vieux port">
                         <div class="nos-activites na-stretch nos-activites-vp">
                             <img src="./images/activites/4_small/vieux-port.jpg" alt="Vieux port">
                             <h3>Vieux Port</h2>
                         </div>
                     </a>
                     <div class="na-couples">
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'activité fort de pomergues">
                             <div class="nos-activites nac-no-stretch-fdp nac-mb fdp-mb nos-activites-fdp">
                                 <img src="./images/activites/1_xlarge/fort-de-pomegues.jpg" alt="Fort de Pomègues">
                                 <h3>Fort de Pomègues</h2>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'activité îles de frioul">
                             <div class="nos-activites nac-no-stretch-idf nos-activites-idf">
                                 <img src="./images/activites/3_medium/iles-du-frioul.jpg" alt="Iles du Frioul">
                                 <h3>Iles du Frioul</h2>
                             </div>
                         </a>
                     </div>
-                    <a href="#">
+                    <a href="#" title="ouvre la page de présentation de l'activité parc national des calanques">
                         <div class="nos-activites na-stretch nos-activites-pndc">
                             <img src="./images/activites/4_small/parc-national-des-calanques.jpg" alt="Parc National des Calanques">
                             <h3>Parc National des Calanques</h2>
                         </div>
                     </a>
                     <div class="na-couples">
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'activité notre dame de la garde">
                             <div class="nos-activites nac-no-stretch-nddlg nac-mb nddlg-mb nos-activites-nddlg">
                                 <img src="./images/activites/1_xlarge/notre-dame-de-la-garde.jpg" alt="Notre Dame de la Garde">
                                 <h3>Notre-Dame-de-la-Garde</h2>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" title="ouvre la page de présentation de l'activité parc longchamp">
                             <div class="nos-activites nac-no-stretch-pl nos-activites-pl">
                                 <img src="./images/activites/1_xlarge/parc-longchamp.jpg" alt="Parc Longchamp">
                                 <h3>Parc Longchamp</h2>
@@ -265,23 +271,23 @@
             <section class="f-apropos">
                 <h2>A propos</h2>
                 <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li class="fm-hb"><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
+                    <li><a href="#" title="lien vers la page fonctionnement du site">Fonctionnement du site</a></li>
+                    <li class="fm-hb"><a href="#" title="lien vers la page conditions générale de vente">Conditions générales de vente</a></li>
+                    <li><a href="#" title="lien vers la page rgpd">Données et confidentialité</a></li>
                 </ul>
             </section>
             <section class="f-hebergements">
                 <h2>Nos hébergements</h2>
                 <ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
+                    <li><a href="#" title="lien vers la page chartre qualité">Charte qualité</a></li>
+                    <li><a href="#" title="lien vers la page soumettre votre hôtel">Soumettre votre hôtel</a></li>
                 </ul>
             </section>
             <section class="f-assistance">
                 <h2>Assistance</h2>
                 <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#" title="lien vers la page d'aide">Centre d'aide</a></li>
+                    <li><a href="#" title="lien vers la page de contact">Nous contacter</a></li>
                 </ul>
             </section>
         </footer><!--Fin footer-->
