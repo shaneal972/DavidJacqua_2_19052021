@@ -517,6 +517,88 @@ footer h2 {
     .search-small {
         display: none;
     }
+
+    #popularite {
+        background: #f2f2f2;
+        width: auto;
+        height: 585px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #heb-marseille {
+        background-color: #f2f2f2;
+        margin: 15px 0;
+    }
+
+    #heb-marseille article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .nos-offres {
+        width: 260px;
+        height: 200px;
+        padding: 5px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 2px #f2f2f2;
+    }
+
+    .nos-offres img {
+        width: 250px;
+        height: 115px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .act-marseille {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nos-activites {
+        width: 465px;
+        height: 200px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 2px #f2f2f2;
+    }
+
+    .nos-activites-vp img {
+        object-fit: cover;
+        object-position: 100% 35%;
+    }
+
+    .nos-activites-fdp img {
+        object-fit: cover;
+        object-position: 100% 53%;
+    }
+
+    .nos-activites-idf img {
+        object-fit: cover;
+        object-position: 100% 35%;
+    }
+
+    .nos-activites-pndc img {
+        object-fit: cover;
+        object-position: 100% 30%;
+    }
+
+    .nos-activites-nddlg img {
+        object-fit: cover;
+        object-position: 100% 25%;
+    }
+
+    .nos-activites-pl img {
+        object-fit: cover;
+        object-position: 100% 45%;
+    }
 }
 
 /* Min-width : 768px */ 
@@ -630,10 +712,18 @@ footer h2 {
 
     .act-marseille {
         display: flex;
-        width: 100%;
+        width: auto;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .nos-activites {
+        width: 350px;
+        height: 190px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 2px #f2f2f2;
     }
 
     .na-stretch img {
@@ -643,7 +733,7 @@ footer h2 {
 
     .nos-activites-vp, 
     .nos-activites-pndc {
-        height: 405px;
+        height: 410px;
     }
 
 
