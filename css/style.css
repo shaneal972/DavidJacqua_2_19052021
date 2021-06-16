@@ -818,6 +818,11 @@ footer h2 {
         width: auto;
     }
 
+    .popularite-header h1 {
+        padding-right: 280px;
+        padding-left: 0;
+    }
+
 
     #popularite article {
         display: flex;
@@ -913,6 +918,7 @@ footer h2 {
     #hebergements {
         display: flex;
         flex-direction: row;
+        margin-bottom: 30px;
     }
 
     #heb-marseille {
@@ -964,14 +970,21 @@ footer h2 {
 
     .popularite-elt {
         width: 315px;
+        height: 185px;
     }
 
     .popularite-header {
         justify-content: space-around;
         padding-left: 0;
         padding-top: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 7px;
         width: auto;
+    }
+
+    .popularite-header h1 {
+        width: 250px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .heb-prix {
