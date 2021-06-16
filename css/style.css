@@ -774,7 +774,7 @@ footer h2 {
     }
 
     footer a {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
         color: black;
     }
 
@@ -787,7 +787,7 @@ footer h2 {
     }
 
     footer section ul {
-        width: 55%;
+        width: 56%;
         margin-right: 200px;
     }
 }
@@ -1214,6 +1214,10 @@ footer h2 {
     .nos-activites-pl img {
         height: 155px;
         object-position: 100% 10%;
+    }
+
+    footer ul li a {
+        font-size: 0.65rem;
     }
 }
 
