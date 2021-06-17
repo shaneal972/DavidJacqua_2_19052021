@@ -830,7 +830,7 @@ footer h2 {
     }
 
     footer a {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         color: black;
     }
 
@@ -1273,8 +1273,12 @@ footer h2 {
         object-position: 100% 10%;
     }
 
+    footer h2 {
+        font-size: 0.9rem;
+    }
+
     footer ul li a {
-        font-size: 0.65rem;
+        font-size: 0.85rem;
     }
 }
 
