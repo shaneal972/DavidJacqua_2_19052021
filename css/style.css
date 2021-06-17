@@ -328,6 +328,12 @@ main {
     padding-bottom: 20px;
 }
 
+.offre-marseille + p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
 .nos-offres {
     width: 335px;
     height: 200px;
@@ -439,7 +445,7 @@ footer h2 {
 
 @media screen and (min-width: 576px) {
     #container {
-        width: 100vw;
+        width: 540px;
     }
 
     header {
@@ -627,6 +633,7 @@ footer h2 {
 
 @media screen and (min-width: 768px) {
     #container {
+        width: 845px;
         margin: 0 auto;
     }
 
@@ -654,6 +661,10 @@ footer h2 {
         margin: 0;
         padding: 0;
         text-align: center;
+    }
+
+    #inscription {
+        margin-right: 35px;
     }
 
     #nav-hebergements,
@@ -688,7 +699,7 @@ footer h2 {
     #hebergements {
         flex-direction: column-reverse;
         justify-content: space-between;
-        margin-bottom: 65px;
+        margin-bottom: 30px;
     }
 
     #heb-marseille {
@@ -703,6 +714,7 @@ footer h2 {
         align-content: center;
         justify-content: space-around;
         align-items: center;
+        width: 90%;
     }
 
     .nos-offres {
@@ -764,6 +776,7 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        width: 90%;
     }
 
     .nos-activites {
@@ -874,13 +887,9 @@ footer h2 {
         align-items: center;
     }
 
-    /* .popularite-elt {
-        width: 300px;
-    } */
-
-   /*  .popularite-elt img {
-        width: 123px;
-    } */
+    .offre-marseille {
+        width: auto;
+    }
 
     .popularite-infos {
         width: 50%;
@@ -894,7 +903,7 @@ footer h2 {
     
 
     .nos-offres {
-        width: 300px;
+        width: 260px;
         height: 200px;
         background-color: #fff;
         padding: 5px;
