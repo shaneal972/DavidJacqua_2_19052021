@@ -552,6 +552,7 @@ footer h2 {
     #heb-marseille {
         background-color: #f2f2f2;
         margin: 15px 0;
+        padding-right: 15px;
     }
 
     #heb-marseille h2 {
@@ -567,7 +568,7 @@ footer h2 {
     }
 
     .nos-offres {
-        width: 250px;
+        width: 240px;
         height: 200px;
         padding: 5px;
         margin-bottom: 25px;
