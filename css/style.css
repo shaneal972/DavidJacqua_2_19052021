@@ -819,6 +819,7 @@ footer h2 {
         padding-left: 55px;
         background-color: #f2f2f2;
         display: flex;
+        justify-content: space-around;
     }
 
     .fm-hb {
@@ -951,6 +952,10 @@ footer h2 {
     .na-stretch img {
         object-fit: cover;
         height: 350px;
+    }
+
+    footer {
+        justify-content: center;
     }
     
     
@@ -1121,9 +1126,13 @@ footer h2 {
         object-position: 100% 10%;
     }
 
+    footer {
+        justify-content: flex-end;
+    }
+
     footer section ul {
         width: 55%;
-        margin-right: 330px;
+        margin-right: 280px;
     }
 }
 
@@ -1274,8 +1283,17 @@ footer h2 {
         object-position: 100% 10%;
     }
 
+    footer {
+        justify-content: center;
+    }
+
     footer h2 {
         font-size: 0.9rem;
+    }
+
+    footer section ul {
+        width: 55%;
+        margin-right: 320px;
     }
 
     footer ul li a {
