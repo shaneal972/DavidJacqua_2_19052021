@@ -675,14 +675,16 @@ footer h2 {
     }
 
     #nav-hebergements,
-    #nav-activites {
+    #nav-activites,
+    #inscription {
         padding-top: 54px;
         padding-bottom: 55px;
         border-bottom: none;
     }
 
     header nav #nav-hebergements:hover,
-    nav #nav-activites:hover {
+    nav #nav-activites:hover,
+    nav #inscription:hover {
         border-bottom: none;
         border-top: 3px solid #0065fc;
     }
@@ -783,13 +785,13 @@ footer h2 {
     .act-marseille {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 90%;
+        /* width: 90%; */
     }
 
     .nos-activites {
-        width: 300px;
+        width: 340px;
         height: 190px;
         margin-bottom: 25px;
         border-radius: 15px;
@@ -800,7 +802,9 @@ footer h2 {
         font-size: 0.9rem;
     }
 
+
     .na-stretch img {
+        width: 340px;
         object-fit: cover;
         /* height: 350px; */
     }
@@ -808,7 +812,7 @@ footer h2 {
     .nos-activites-vp, 
     .nos-activites-pndc {
         height: 410px;
-        margin-right: 40px;
+        /* margin-right: 40px; */
     }
 
 
