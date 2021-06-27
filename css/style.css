@@ -869,7 +869,7 @@ footer h2 {
 
 @media screen and (min-width: 992px) {
     #container {
-        width: 960px;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -967,12 +967,13 @@ footer h2 {
 
     .na-stretch {
         height: 405px;
-        width: 230px;
+        width: 240px;
     }
 
     .na-stretch img {
+        width: 240px;
         object-fit: cover;
-        height: 350px;
+        /* height: 350px; */
     }
 
     footer {
@@ -1101,6 +1102,7 @@ footer h2 {
     }
 
     .na-stretch img {
+        width: 265px;
         object-fit: cover;
         height: 396px;
     }
@@ -1252,6 +1254,11 @@ footer h2 {
 
     .na-stretch {
         width: 305px;
+    }
+
+    .na-stretch img {
+        width: 305px;
+        object-fit: cover;
     }
 
     .nos-activites-vp img {
