@@ -791,7 +791,7 @@ footer h2 {
     }
 
     .nos-activites {
-        width: 340px;
+        width: 365px;
         height: 190px;
         margin-bottom: 25px;
         border-radius: 15px;
@@ -804,7 +804,7 @@ footer h2 {
 
 
     .na-stretch img {
-        width: 340px;
+        width: 365px;
         object-fit: cover;
         /* height: 350px; */
     }
